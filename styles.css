@@ -1,0 +1,110 @@
+/*#864ffa #2b0380 #a479f6 #7c7c7c #444444 #bcbcbc*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  
+  .container > div {
+    flex-direction: row;
+    width: 700px; /* ancho del cuadrado */
+    height: auto; /* altura del cuadrado */
+    background-color: white;
+  
+
+  }
+#outbox{
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+body{
+    background-color: hsl(0, 0%, 86%) ;
+}
+.custom-input{
+  border: 1px solid #ccc;
+  color:hsl(0, 0%, 8%);;
+  font-size: 32px;
+  font-weight: bold;
+  
+  
+}
+label{
+  font-size: 12px;
+  color: hsl(0, 1%, 44%);
+  font-family: 'Poppins', sans-serif;
+  font-weight:900;
+}
+
+#buttonSubmit{
+  height: 50px;
+  display: flex;
+  flex-direction: row; /* Establecer la dirección de los elementos como horizontal */
+  justify-content: flex-end; /* Alinear los elementos a la derecha */
+  align-items: center; /* Alinear los elementos en el centro verticalmente */
+}
+
+#imgButton{
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color:hsl(259, 100%, 65%) ;
+}
+p{
+  font-family: 'Poppins', sans-serif;
+  font-weight:bolder;
+  font-size: 70px;
+  font-style: italic;
+}
+
+#result{
+  display: flex;
+}
+#years,#months,#days{
+  color:hsl(259, 100%, 65%) ;
+  font-weight:900 ;
+}
+
+/*responsive*/
+
+@media (max-width: 375px) {
+  .container {
+    padding: 10px;
+  }
+
+  .container > div {
+    width: 100%;
+    max-width: 375px;
+  }
+
+  .custom-input {
+    font-size: 15px;
+    padding: 5px;
+    width: 150%;
+  }
+
+  label {
+    font-size: 10px;
+  }
+
+  #buttonSubmit {
+    height: 40px;
+  }
+
+  p {
+    font-size: 40px;
+  }
+}
